@@ -1,0 +1,1102 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Khatu Bagh Resort | Stay Near Khatu Shyam Ji Temple</title>
+  <meta name="description" content="Planning a visit to Khatu Shyam Ji? Explore Khatu Bagh Resort, its room options, facilities and location, and check your stay on SpottyGo.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    :root {
+      --khatu-green: #176b52;
+      --khatu-green-dark: #124c3c;
+      --khatu-green-light: #edf6f0;
+      --khatu-text: #203b33;
+      --khatu-muted: #63756e;
+      --khatu-border: #e1eae4;
+      --khatu-cream: #fbf8f0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--khatu-text);
+      background: #fff;
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--khatu-green);
+    }
+
+    .khatu-container {
+      width: min(1120px, calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .khatu-header {
+      background: #fff;
+      border-bottom: 1px solid var(--khatu-border);
+    }
+
+    .khatu-header-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .khatu-brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+      color: var(--khatu-text);
+      flex-shrink: 0;
+    }
+
+    .khatu-brand-icon {
+      display: grid;
+      place-items: center;
+      width: 43px;
+      height: 43px;
+      background: var(--khatu-green);
+      border-radius: 12px;
+      color: #fff;
+      font-size: 23px;
+      font-weight: 800;
+    }
+
+    .khatu-brand-name {
+      display: block;
+      font-size: 19px;
+      font-weight: 800;
+      line-height: 1.25;
+    }
+
+    .khatu-brand-subtitle {
+      display: block;
+      margin-top: 3px;
+      color: var(--khatu-muted);
+      font-size: 11px;
+    }
+
+    .khatu-nav {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .khatu-nav a {
+      color: #354b43;
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .khatu-nav a:hover {
+      color: var(--khatu-green);
+    }
+
+    .khatu-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 48px;
+      padding: 12px 20px;
+      background: var(--khatu-green);
+      border: 1px solid var(--khatu-green);
+      border-radius: 9px;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .khatu-button:hover {
+      background: var(--khatu-green-dark);
+      color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .khatu-button-outline {
+      background: #fff;
+      color: var(--khatu-green);
+    }
+
+    .khatu-button-outline:hover {
+      background: var(--khatu-green-light);
+      color: var(--khatu-green-dark);
+    }
+
+    .khatu-hero {
+      padding: 65px 0;
+      background:
+        radial-gradient(ellipse at top right, #e0f0e3 0, transparent 42%),
+        linear-gradient(135deg, #f8fbf7, #fffaf1);
+    }
+
+    .khatu-hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      align-items: center;
+      gap: 48px;
+    }
+
+    .khatu-eyebrow {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 11px;
+      border-radius: 50px;
+      background: #e3f2e7;
+      color: var(--khatu-green-dark);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .6px;
+      text-transform: uppercase;
+    }
+
+    .khatu-hero h1 {
+      margin: 0 0 18px;
+      color: #183c30;
+      font-size: clamp(34px, 4.5vw, 53px);
+      line-height: 1.13;
+      letter-spacing: -1.3px;
+    }
+
+    .khatu-hero h1 span {
+      color: var(--khatu-green);
+    }
+
+    .khatu-hero-copy {
+      max-width: 590px;
+      margin: 0 0 25px;
+      color: #596e64;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+
+    .khatu-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .khatu-image-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 450px;
+      justify-self: end;
+    }
+
+    .khatu-hero-image {
+      display: block;
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 22px;
+      background: #e9eee8;
+      box-shadow: 0 18px 45px rgba(25, 67, 49, .12);
+    }
+
+    .khatu-image-caption {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      left: 14px;
+      padding: 12px 15px;
+      border: 1px solid rgba(255, 255, 255, .6);
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .94);
+      color: var(--khatu-text);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .khatu-highlights {
+      position: relative;
+      z-index: 1;
+      margin-top: -1px;
+      border-top: 1px solid var(--khatu-border);
+      border-bottom: 1px solid var(--khatu-border);
+      background: #fff;
+    }
+
+    .khatu-highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .khatu-highlight {
+      padding: 23px 17px;
+      text-align: center;
+      border-right: 1px solid var(--khatu-border);
+    }
+
+    .khatu-highlight:last-child {
+      border-right: 0;
+    }
+
+    .khatu-highlight strong {
+      display: block;
+      margin-bottom: 4px;
+      color: var(--khatu-green-dark);
+      font-size: 16px;
+    }
+
+    .khatu-highlight span {
+      display: block;
+      color: var(--khatu-muted);
+      font-size: 12px;
+    }
+
+    .khatu-section {
+      padding: 62px 0;
+    }
+
+    .khatu-section-soft {
+      background: #f8faf8;
+    }
+
+    .khatu-section-heading {
+      max-width: 740px;
+      margin-bottom: 30px;
+    }
+
+    .khatu-section-heading h2 {
+      margin: 0 0 12px;
+      color: #193d31;
+      font-size: clamp(27px, 3.3vw, 36px);
+      line-height: 1.25;
+    }
+
+    .khatu-section-heading p {
+      margin: 0;
+      color: var(--khatu-muted);
+      line-height: 1.85;
+    }
+
+    .khatu-about-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 38px;
+      align-items: start;
+    }
+
+    .khatu-copy p {
+      margin: 0 0 17px;
+      color: #566b61;
+    }
+
+    .khatu-info-card {
+      padding: 25px;
+      border: 1px solid var(--khatu-border);
+      border-radius: 16px;
+      background: #fff;
+    }
+
+    .khatu-info-card h3 {
+      margin: 0 0 18px;
+      color: #193d31;
+      font-size: 20px;
+    }
+
+    .khatu-info-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 18px;
+      padding: 12px 0;
+      border-bottom: 1px solid #edf1ed;
+      font-size: 14px;
+    }
+
+    .khatu-info-row:last-child {
+      border-bottom: 0;
+    }
+
+    .khatu-info-row span {
+      color: var(--khatu-muted);
+    }
+
+    .khatu-info-row strong {
+      text-align: right;
+    }
+
+    .khatu-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .khatu-feature-card {
+      padding: 23px;
+      border: 1px solid var(--khatu-border);
+      border-radius: 15px;
+      background: #fff;
+    }
+
+    .khatu-feature-icon {
+      display: grid;
+      place-items: center;
+      width: 45px;
+      height: 45px;
+      margin-bottom: 14px;
+      border-radius: 12px;
+      background: var(--khatu-green-light);
+      font-size: 22px;
+    }
+
+    .khatu-feature-card h3 {
+      margin: 0 0 8px;
+      color: #193d31;
+      font-size: 17px;
+    }
+
+    .khatu-feature-card p {
+      margin: 0;
+      color: var(--khatu-muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .khatu-nearby-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .khatu-nearby-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      padding: 18px;
+      border: 1px solid var(--khatu-border);
+      border-radius: 13px;
+      background: #fff;
+    }
+
+    .khatu-nearby-icon {
+      font-size: 23px;
+      line-height: 1.4;
+    }
+
+    .khatu-nearby-item strong {
+      display: block;
+      margin-bottom: 4px;
+      color: #193d31;
+    }
+
+    .khatu-nearby-item span {
+      color: var(--khatu-muted);
+      font-size: 13px;
+    }
+
+    .khatu-tip {
+      margin-top: 22px;
+      padding: 18px 20px;
+      border-left: 4px solid var(--khatu-green);
+      border-radius: 0 10px 10px 0;
+      background: var(--khatu-green-light);
+      color: #405b4d;
+      font-size: 14px;
+    }
+
+    .khatu-booking-banner {
+      padding: 42px 28px;
+      border-radius: 20px;
+      background: linear-gradient(130deg, #164d3c, #207456);
+      color: #fff;
+      text-align: center;
+    }
+
+    .khatu-booking-banner h2 {
+      margin: 0 0 12px;
+      font-size: clamp(27px, 3.4vw, 36px);
+      line-height: 1.25;
+    }
+
+    .khatu-booking-banner p {
+      max-width: 690px;
+      margin: 0 auto 23px;
+      color: #e1efe6;
+      line-height: 1.8;
+    }
+
+    .khatu-booking-banner .khatu-button {
+      background: #fff;
+      border-color: #fff;
+      color: var(--khatu-green-dark);
+    }
+
+    .khatu-booking-banner .khatu-button:hover {
+      background: #f0f7f1;
+    }
+
+    .khatu-faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .khatu-faq-list details {
+      padding: 17px 19px;
+      border: 1px solid var(--khatu-border);
+      border-radius: 12px;
+      background: #fff;
+    }
+
+    .khatu-faq-list summary {
+      cursor: pointer;
+      color: #193d31;
+      font-weight: 700;
+    }
+
+    .khatu-faq-list details p {
+      margin: 12px 0 0;
+      color: var(--khatu-muted);
+      font-size: 14px;
+      line-height: 1.8;
+    }
+
+    .khatu-footer {
+      padding: 28px 0;
+      background: #f6f8f6;
+      border-top: 1px solid var(--khatu-border);
+    }
+
+    .khatu-footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .khatu-footer p {
+      margin: 0;
+      color: var(--khatu-muted);
+      font-size: 13px;
+    }
+
+    .khatu-footer a {
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 850px) {
+      .khatu-header-inner {
+        padding: 14px 0;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .khatu-nav {
+        gap: 15px;
+      }
+
+      .khatu-hero-grid,
+      .khatu-about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .khatu-image-wrap {
+        max-width: 520px;
+        justify-self: start;
+      }
+
+      .khatu-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .khatu-highlights-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .khatu-highlight:nth-child(2) {
+        border-right: 0;
+      }
+
+      .khatu-highlight:nth-child(-n+2) {
+        border-bottom: 1px solid var(--khatu-border);
+      }
+    }
+
+    @media (max-width: 540px) {
+      .khatu-container {
+        width: calc(100% - 30px);
+      }
+
+      .khatu-hero {
+        padding: 42px 0;
+      }
+
+      .khatu-hero h1 {
+        font-size: 36px;
+      }
+
+      .khatu-hero-image {
+        height: 260px;
+      }
+
+      .khatu-hero-actions {
+        flex-direction: column;
+      }
+
+      .khatu-hero-actions .khatu-button {
+        width: 100%;
+      }
+
+      .khatu-section {
+        padding: 43px 0;
+      }
+
+      .khatu-grid,
+      .khatu-nearby-list {
+        grid-template-columns: 1fr;
+      }
+
+      .khatu-highlight {
+        padding: 18px 9px;
+      }
+
+      .khatu-highlight strong {
+        font-size: 14px;
+      }
+
+      .khatu-highlight span {
+        font-size: 11px;
+      }
+
+      .khatu-booking-banner {
+        padding: 32px 19px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="khatu-header">
+    <div class="khatu-container khatu-header-inner">
+
+      <a class="khatu-brand" href="index.html" aria-label="SpottyGo Travel Guides home">
+        <span class="khatu-brand-icon">S</span>
+        <span>
+          <span class="khatu-brand-name">SpottyGo</span>
+          <span class="khatu-brand-subtitle">Travel Guides</span>
+        </span>
+      </a>
+
+      <nav class="khatu-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#guides">Travel Guides</a>
+        <a href="continue-planning.html">Plan Your Trip</a>
+        <a href="https://spottygo.com/" target="_blank" rel="noopener noreferrer">
+          SpottyGo.com ↗
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="khatu-hero">
+      <div class="khatu-container khatu-hero-grid">
+
+        <div>
+          <span class="khatu-eyebrow">Stay in Khatu, Rajasthan</span>
+
+          <h1>
+            Looking for a Stay in Khatu?
+            <span>Explore Khatu Bagh Resort</span>
+          </h1>
+
+          <p class="khatu-hero-copy">
+            Planning a visit to Khatu Shyam Ji Temple? Khatu Bagh Resort is
+            an accommodation option to consider for your pilgrimage. With
+            room choices for different group sizes and useful facilities,
+            it can suit families and devotees looking for a place to stay
+            near Khatu Dham.
+          </p>
+
+          <div class="khatu-hero-actions">
+            <a class="khatu-button"
+               href="https://spottygo.com/khatu-bagh-resort-khatu.html"
+               target="_blank" rel="noopener noreferrer">
+              Check Stay on SpottyGo →
+            </a>
+
+            <a class="khatu-button khatu-button-outline" href="#resort-details">
+              Explore Resort Details
+            </a>
+          </div>
+        </div>
+
+        <div class="khatu-image-wrap">
+          <!-- Replace this image path with your own resort photo if available. -->
+          <img
+            class="khatu-hero-image"
+            src="./khatu-bagh-resort.jpg"
+            alt="Khatu Bagh Resort near Khatu Shyam Ji Temple"
+            loading="eager"
+            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
+          >
+
+          <div style="display:none; min-height:260px; padding:30px; border-radius:22px; background:#e8f1e9; color:#245540; align-content:center; text-align:center;">
+            <div style="font-size:44px;">🏨</div>
+            <strong style="font-size:22px;">Khatu Bagh Resort</strong>
+            <p>Explore room options and stay details on SpottyGo.</p>
+            <a class="khatu-button"
+               href="https://spottygo.com/khatu-bagh-resort-khatu.html"
+               target="_blank" rel="noopener noreferrer">
+              View Property
+            </a>
+          </div>
+
+          <div class="khatu-image-caption">
+            A stay option for your Khatu Shyam Ji pilgrimage
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- QUICK FACTS -->
+    <section class="khatu-highlights" aria-label="Resort highlights">
+      <div class="khatu-container khatu-highlights-grid">
+
+        <div class="khatu-highlight">
+          <strong>Approx. 1 km</strong>
+          <span>From Khatu Shyam Ji Temple</span>
+        </div>
+
+        <div class="khatu-highlight">
+          <strong>Family Rooms</strong>
+          <span>Room options for groups</span>
+        </div>
+
+        <div class="khatu-highlight">
+          <strong>Parking</strong>
+          <span>Vehicle parking available</span>
+        </div>
+
+        <div class="khatu-highlight">
+          <strong>Restaurant</strong>
+          <span>Meals available at a charge</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ABOUT THE RESORT -->
+    <section class="khatu-section" id="resort-details">
+      <div class="khatu-container">
+
+        <div class="khatu-section-heading">
+          <h2>About Khatu Bagh Resort</h2>
+          <p>
+            A practical accommodation option to consider when planning
+            your Khatu Shyam Ji darshan, family visit or group pilgrimage.
+          </p>
+        </div>
+
+        <div class="khatu-about-grid">
+
+          <div class="khatu-copy">
+            <p>
+              Khatu Bagh Resort is located on Ringas Road in Khatu, Sikar,
+              Rajasthan. Its location makes it worth considering for
+              travellers who want to stay in the Khatu area while visiting
+              the famous Khatu Shyam Ji Temple.
+            </p>
+
+            <p>
+              The property listing describes air-conditioned rooms,
+              hot water, attached bathrooms, parking, CCTV cameras and
+              family-room options. Guests can also check the availability
+              of chargeable meals and other facilities before booking.
+            </p>
+
+            <p>
+              Whether you are travelling with family, friends or a group
+              of devotees, compare the room capacity, facilities, total
+              price and property rules before confirming your stay.
+            </p>
+
+            <a class="khatu-button"
+               href="https://spottygo.com/khatu-bagh-resort-khatu.html"
+               target="_blank" rel="noopener noreferrer">
+              View Rooms and Booking Details →
+            </a>
+          </div>
+
+          <aside class="khatu-info-card">
+            <h3>Property Information</h3>
+
+            <div class="khatu-info-row">
+              <span>Property</span>
+              <strong>Khatu Bagh Resort</strong>
+            </div>
+
+            <div class="khatu-info-row">
+              <span>Location</span>
+              <strong>Ringas Road, Khatu, Sikar</strong>
+            </div>
+
+            <div class="khatu-info-row">
+              <span>Check-in</span>
+              <strong>1:00 PM</strong>
+            </div>
+
+            <div class="khatu-info-row">
+              <span>Check-out</span>
+              <strong>10:00 AM</strong>
+            </div>
+
+            <div class="khatu-info-row">
+              <span>Temple distance</span>
+              <strong>Approx. 1 km</strong>
+            </div>
+
+            <div class="khatu-info-row">
+              <span>Meals</span>
+              <strong>Chargeable</strong>
+            </div>
+
+            <div class="khatu-info-row">
+              <span>Booking</span>
+              <strong>
+                <a href="https://spottygo.com/khatu-bagh-resort-khatu.html"
+                   target="_blank" rel="noopener noreferrer">
+                  Check on SpottyGo
+                </a>
+              </strong>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section class="khatu-section khatu-section-soft">
+      <div class="khatu-container">
+
+        <div class="khatu-section-heading">
+          <h2>Facilities to Check Before Booking</h2>
+          <p>
+            These are useful features listed for the property. Confirm
+            current availability and any extra charges with SpottyGo
+            before completing your reservation.
+          </p>
+        </div>
+
+        <div class="khatu-grid">
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">🛏️</div>
+            <h3>Different Room Sizes</h3>
+            <p>
+              Room categories include options for smaller parties as well
+              as larger families and groups. Check the maximum guest
+              capacity for your selected room.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">❄️</div>
+            <h3>Air-Conditioned Rooms</h3>
+            <p>
+              The listing includes air-conditioned room options. Confirm
+              the facilities included with the exact room category you
+              plan to reserve.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">🚿</div>
+            <h3>Hot Water and Bathrooms</h3>
+            <p>
+              Attached bathrooms and hot water are listed among the room
+              amenities.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">🚗</div>
+            <h3>Parking Facility</h3>
+            <p>
+              Parking is listed as an available facility. Ask about
+              parking arrangements if you are travelling by car or
+              tempo traveller.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">🍽️</div>
+            <h3>Food and Dining</h3>
+            <p>
+              A restaurant and chargeable meals are listed. Check meal
+              options, timings and prices directly before arrival.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">👨‍👩‍👧‍👦</div>
+            <h3>Family and Group Travel</h3>
+            <p>
+              Larger room categories may help families and pilgrimage
+              groups stay together. Confirm room capacity and availability
+              for your dates.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- NEARBY PLACES -->
+    <section class="khatu-section">
+      <div class="khatu-container">
+
+        <div class="khatu-section-heading">
+          <h2>Places to Visit Around Khatu</h2>
+          <p>
+            Plan your darshan and nearby visits around your stay. Distances
+            below are approximate and can vary depending on the route.
+          </p>
+        </div>
+
+        <div class="khatu-nearby-list">
+
+          <div class="khatu-nearby-item">
+            <div class="khatu-nearby-icon">🙏</div>
+            <div>
+              <strong>Shree Khatu Shyam Ji Temple</strong>
+              <span>The main pilgrimage destination in Khatu, approximately 1 km from the property listing location.</span>
+            </div>
+          </div>
+
+          <div class="khatu-nearby-item">
+            <div class="khatu-nearby-icon">🪷</div>
+            <div>
+              <strong>Shyam Kund</strong>
+              <span>A well-known religious site associated with Khatu Shyam Ji, approximately 2.5 km away according to the property listing.</span>
+            </div>
+          </div>
+
+          <div class="khatu-nearby-item">
+            <div class="khatu-nearby-icon">🚉</div>
+            <div>
+              <strong>Ringas Junction</strong>
+              <span>A nearby rail connection used by travellers coming to Khatu. Arrange onward transport to your accommodation.</span>
+            </div>
+          </div>
+
+          <div class="khatu-nearby-item">
+            <div class="khatu-nearby-icon">🛕</div>
+            <div>
+              <strong>Other Local Temples</strong>
+              <span>Allow extra time if you plan to visit other temples in and around Khatu during your trip.</span>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="khatu-tip">
+          <strong>Travel tip:</strong> During busy pilgrimage periods and festivals,
+          accommodation and local transport can be in high demand. Check the
+          temple's latest announcements, plan your arrival and confirm your
+          booking details in advance.
+        </div>
+
+      </div>
+    </section>
+
+    <!-- WHO IT MAY SUIT -->
+    <section class="khatu-section khatu-section-soft">
+      <div class="khatu-container">
+
+        <div class="khatu-section-heading">
+          <h2>Is Khatu Bagh Resort Right for Your Trip?</h2>
+          <p>
+            Consider the property based on your group size, budget,
+            transport plans and preferred facilities.
+          </p>
+        </div>
+
+        <div class="khatu-grid">
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">👨‍👩‍👧</div>
+            <h3>Families</h3>
+            <p>
+              Review the family-room options and choose a room with
+              sufficient space for everyone travelling with you.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">🙏</div>
+            <h3>Pilgrims</h3>
+            <p>
+              The location may be convenient for visitors planning
+              Khatu Shyam Ji darshan. Check local access and temple
+              arrangements for your travel dates.
+            </p>
+          </div>
+
+          <div class="khatu-feature-card">
+            <div class="khatu-feature-icon">👥</div>
+            <h3>Groups</h3>
+            <p>
+              Compare room capacities and total costs. Contact the booking
+              provider to confirm whether enough suitable rooms are
+              available for your group.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOKING CTA -->
+    <section class="khatu-section" id="book-stay">
+      <div class="khatu-container">
+
+        <div class="khatu-booking-banner">
+          <h2>Planning Your Stay in Khatu?</h2>
+          <p>
+            Check Khatu Bagh Resort's current room options, prices,
+            availability and booking conditions on SpottyGo before
+            finalizing your pilgrimage plans.
+          </p>
+
+          <a class="khatu-button"
+             href="https://spottygo.com/khatu-bagh-resort-khatu.html"
+             target="_blank" rel="noopener noreferrer">
+            Check Khatu Bagh Resort on SpottyGo →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="khatu-section khatu-section-soft">
+      <div class="khatu-container">
+
+        <div class="khatu-section-heading">
+          <h2>Frequently Asked Questions</h2>
+          <p>Useful answers for travellers considering Khatu Bagh Resort.</p>
+        </div>
+
+        <div class="khatu-faq-list">
+
+          <details>
+            <summary>How far is Khatu Bagh Resort from Khatu Shyam Ji Temple?</summary>
+            <p>
+              The SpottyGo property listing places the resort approximately
+              1 km from Khatu Shyam Ji Temple. Confirm the route and current
+              access conditions before travelling.
+            </p>
+          </details>
+
+          <details>
+            <summary>What are the check-in and check-out times?</summary>
+            <p>
+              The listing shows check-in at 1:00 PM and check-out at
+              10:00 AM. Confirm the current timings with the booking
+              provider before arrival.
+            </p>
+          </details>
+
+          <details>
+            <summary>Does Khatu Bagh Resort have family rooms?</summary>
+            <p>
+              Family-room categories are listed for the property.
+              Check the number of guests permitted, bed arrangements
+              and availability for your chosen dates.
+            </p>
+          </details>
+
+          <details>
+            <summary>Is parking available at the resort?</summary>
+            <p>
+              Parking is listed as an available facility. If you are
+              travelling in a larger vehicle, confirm the parking
+              arrangements directly before booking.
+            </p>
+          </details>
+
+          <details>
+            <summary>Are meals included in the room price?</summary>
+            <p>
+              The property listing describes chargeable meals. Check
+              whether your selected rate includes meals and ask about
+              any additional food charges.
+            </p>
+          </details>
+
+          <details>
+            <summary>How can I check the latest room prices and availability?</summary>
+            <p>
+              Visit the
+              <a href="https://spottygo.com/khatu-bagh-resort-khatu.html"
+                 target="_blank" rel="noopener noreferrer">
+                Khatu Bagh Resort page on SpottyGo
+              </a>
+              to review the current listing and booking details.
+              Prices and availability may change with dates and demand.
+            </p>
+          </details>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="khatu-footer">
+    <div class="khatu-container khatu-footer-inner">
+      <p>© <span id="khatu-year">2026</span> SpottyGo Travel Guides. Plan your journey thoughtfully.</p>
+      <p>
+        <a href="index.html">Travel Guides</a>
+        &nbsp;·&nbsp;
+        <a href="https://spottygo.com/" target="_blank" rel="noopener noreferrer">
+          SpottyGo.com
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+  <script>
+    document.getElementById("khatu-year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
+```
